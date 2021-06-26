@@ -1,0 +1,144 @@
+#Banner {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(274deg, #46c8d0, #6262e2 44%, #c962f7);
+    color: #fff;
+}
+
+#Banner .content-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    left: 50%;
+}
+
+#Banner .content-wrap h1 {
+    font-size: 80px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+#Banner .content-wrap h3 {
+    font-size: 24px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+#Banner .btn-primary {
+    background-color: #02ccba;
+    color: #fff;
+    border: none;
+}
+
+#Banner .btn-primary:hover {
+    background-color: #07bcab;
+}
+
+.content-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-section-heading h2 {
+    font-size: 48px;
+}
+
+.content-section-heading h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+.text-center {
+    text-align: center !important
+}
+
+@media (min-width:576px) {
+    .text-sm-left {
+        text-align: left !important
+    }
+
+    .text-sm-right {
+        text-align: right !important
+    }
+
+    .text-sm-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width:768px) {
+    .text-md-left {
+        text-align: left !important
+    }
+
+    .text-md-right {
+        text-align: right !important
+    }
+
+    .text-md-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width:992px) {
+    .text-lg-left {
+        text-align: left !important
+    }
+
+    .text-lg-right {
+        text-align: right !important
+    }
+
+    .text-lg-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width:1200px) {
+    .text-xl-left {
+        text-align: left !important
+    }
+
+    .text-xl-right {
+        text-align: right !important
+    }
+
+    .text-xl-center {
+        text-align: center !important
+    }
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}

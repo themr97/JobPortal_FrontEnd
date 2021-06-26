@@ -10,12 +10,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <Container>
-        <Switch>
-          <Route path='/' component={Home} exact />
-          <Route path='/signup' component={Signup} exact />
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/signup' component={Signup} exact />
+      </Switch>
     </>
   );
 }
