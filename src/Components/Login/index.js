@@ -4,10 +4,10 @@ import { Modal, Button, Form } from "react-bootstrap"
 
 import auth from '../../auth/auth'
 import api from '../../api/api'
+import { Redirect } from "react-router-dom"
 
 
-const Login = (props) => {
-    const handleClose = props;
+const Login = () => {
 
     const [loggedin, setLoggedin] = useState(auth());
 
@@ -30,14 +30,16 @@ const Login = (props) => {
             setLoggedin(auth());
             alert("Logged in successfully")
             console.log(response);
+            window.location.reload(true);
         })
             .catch((err) => {
-                alert(err.response)
                 console.log(err.response);
             });
     };
 
-    return (
+    return loggedin ? (
+        <Redirect to="/" />
+    ) : (
         <>
             <Modal.Header closeButton>
                 <Modal.Title>Login</Modal.Title>

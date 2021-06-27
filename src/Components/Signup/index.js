@@ -21,7 +21,7 @@ import FileUpload from "./FileUpload";
 
 const Signup = () => {
 
-    const [loggedin, setLoggedin] = useState(false);
+    const [loggedin, setLoggedin] = useState(auth());
 
     const [signupDetails, setSignupDetails] = useState({
         type: "applicant",
@@ -34,7 +34,6 @@ const Signup = () => {
         companyName: "",
     });
 
-    console.log(signupDetails)
     const [phone, setPhone] = useState("");
 
 
@@ -128,7 +127,7 @@ const Signup = () => {
                                     handleInput("type", event.target.value);
                                 }}
                             >
-                                <option value="recruiter">Recuriter</option>
+                                <option value="recruiter">Recruiter</option>
                                 <option value="applicant">Applicant</option>
                             </Form.Control>
                         </Form.Group>
@@ -219,7 +218,6 @@ const Signup = () => {
                         )}
                         <Button
                             variant="primary"
-                            type="submit"
                             onClick={() => {
                                 signupDetails.type === "applicant"
                                     ? handleLoginApplicant()
@@ -229,11 +227,6 @@ const Signup = () => {
                             Signup
                         </Button>
                     </Form>
-                </Col>
-            </Row>
-            <Row className="py-4">
-                <Col>
-                    Already have an account <a href="/">Login Now</a>
                 </Col>
             </Row>
         </Container >

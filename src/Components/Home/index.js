@@ -4,15 +4,15 @@ import './index.css'
 const Home = () => {
     return (
         <div>
-            <section id="Banner" class="content-section">
-                <div class="container content-wrap text-center">
+            <section id="Banner" className="content-section">
+                <div className="container content-wrap text-center">
                     <h1>Job Portal</h1>
                     <h3>
                         <em>Find the best job in the market!</em>
                     </h3>
-                    <a class="btn btn-primary btn-xl smooth-scroll" href="/signup">Signup Now!</a>
+                    <a className="btn btn-primary btn-xl smooth-scroll" href="/signup">Signup Now!</a>
                 </div>
-                <div class="overlay"></div>
+                <div className="overlay"></div>
             </section>
         </div>
     )
