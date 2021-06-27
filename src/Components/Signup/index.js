@@ -56,8 +56,9 @@ const Signup = () => {
             localStorage.setItem("token", response.data.token);
             localStorage.setItem("type", response.data.type);
             setLoggedin(auth());
-            alert("Logged in successfully")
+            alert("Signed up successfully")
             console.log(response);
+            window.location.reload(true);
         })
             .catch((err) => {
                 console.log(err.response);
@@ -87,8 +88,9 @@ const Signup = () => {
                 localStorage.setItem("token", response.data.token);
                 localStorage.setItem("type", response.data.type);
                 setLoggedin(auth());
-                alert("Logged in successfully")
+                alert("Signed up successfully")
                 console.log(response);
+                window.location.reload(true);
             })
             .catch((err) => {
                 console.log(err.response);

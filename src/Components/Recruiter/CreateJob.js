@@ -118,7 +118,6 @@ const CreateJob = () => {
                         </Form.Group>
                         <Button
                             variant="primary"
-                            type="submit"
                             onClick={() => handleUpdate()}
                         >
                             Post Job

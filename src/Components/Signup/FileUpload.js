@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Form } from 'react-bootstrap'
+import { Button, Form } from 'react-bootstrap'
 
 import Axios from "axios";
 
@@ -11,6 +11,8 @@ const FileUpload = (props) => {
         console.log(file);
         const data = new FormData();
         data.append("file", file);
+
+
         Axios.post(uploadTo, data, {
             headers: {
                 "Content-Type": "multipart/form-data",
@@ -36,10 +38,10 @@ const FileUpload = (props) => {
                 onChange={(event) => {
                     console.log(event.target.files);
                     setFile(event.target.files[0]);
-                    handleUpload()
                 }}
                 required
             />
+            <Button primary onClick={() => handleUpload()}>Upload Resume</Button>
         </>
     )
 }
